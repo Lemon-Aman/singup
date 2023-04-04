@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desgine-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Ubuntu', sans-serif;
+        color: black;
+    }
+
+    body {
+        background-image: linear-gradient(107.25deg, rgba(63, 224, 128, 0.55) -0.26%, #9CB8FF 100%);
+    }
+
+    div.container {
+        display: flex;
+        width: 100%;
+        height: 900px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.singup-box {
+        position: absolute;
+        width: 480px;
+        height: 600px;
+        background: linear-gradient(146.69deg, rgba(221, 221, 221, 0.7) 0%, rgba(255, 254, 254, 0.7) 0.01%, rgba(223, 223, 223, 0.7) 93.06%);
+        opacity: 0.65;
+        box-shadow: 0px 0px 102px -20px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+    }
+
+    img {
+        margin: 10px;
+    }
+
+    div.logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0px;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 3px;
+        height: 25px;
+        border-radius: 3px;
+        border: 1px solid #a6a6a6;
+    }
+
+    h3 {
+
+        margin: 0px;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    .input input {
+        margin: 0px;
+        margin-left: 80px;
+        height: auto;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .submit input {
+        background-color: green;
+        color: white;
+        font-weight: bolder;
+        width: 125px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="singup-box">
+            <div class="logo">
+                <img src="logo.jpg" width="50px">
+                <h1>Create An Account</h1>
+            </div>
+            <form action="create_account.php">
+                <div class="textbox">
+                    <h3>Full Name</h3>
+                    <input type="text">
+                    <h3>Email</h3>
+                    <input type="email">
+                    <h3>Password</h3>
+                    <input type="password">
+                    <h3>Confirm Password</h3>
+                    <input type="textpassword">
+                    <h3>Contact Number</h3>
+                    <input type="tel">
+                    <div class="input">
+                        <h3>Gender</h3>
+                        <input type="radio" class="gender" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" class="gender" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
